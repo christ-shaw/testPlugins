@@ -1,17 +1,19 @@
 <idea-plugin>
     <id>org.example.testPlugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>yapi poster</name>
+    <vendor email="35967859@qq.com" url="http://www.worldunion.com">worldunion</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    A plugin for ypai post try it right now as soon as possible
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
+    <extensionPoints>
+
+    </extensionPoints>
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
@@ -23,4 +25,11 @@
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
         </action>
     </actions>
+
+
+    <!-- Add Settings Dialog that is similar to what ShowKotlinUIDSLSampleAction does. -->
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="setting.SettingConfiguration" />
+    </extensions>
+
 </idea-plugin>
